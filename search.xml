@@ -35,7 +35,7 @@
 <ol>
 <li>在coding下新建一个项目，登录coding！<a href="https://coding.net" target="_blank" rel="external">官网</a>,创建一个新的项目</li>
 <li>建立ssh连接：打开gitbash，输入<blockquote>
-<p>ssh-keygen -t rsa -C </p>
+<p>ssh-keygen -t rsa -C “username@example.com” //( 注册的邮箱)</p>
 </blockquote>
 </li>
 </ol>
