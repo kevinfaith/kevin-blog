@@ -6,20 +6,21 @@
     <entry>
       <title><![CDATA[一天一条linux命令]]></title>
       <url>http://www.kevinfaith.cn/undefined/%E4%B8%80%E5%A4%A9%E4%B8%80%E6%9D%A1linux%E5%91%BD%E4%BB%A420170215/</url>
-      <content type="html"><![CDATA[<ol>
-<li>linux下修改文件所属用户组和修改文件权限的命令<a id="more"></a>
-修改文件所属用户组的命令是chown，这个命令的格式是<blockquote>
+      <content type="html"><![CDATA[<p>linux下修改文件所属用户组和修改文件权限的命令</p>
+<a id="more"></a>
+<ol>
+<li>修改文件所属用户组的命令是chown，这个命令的格式是</li>
+</ol>
+<blockquote>
 <p>chown    [-R]    username  filename<br>chown    [-R]    username:group filename</p>
 </blockquote>
-</li>
-</ol>
 <p>第一个是修改文件所属的的用户，第二个修改文件所属用户组,-R属性为可选属性，意思是递归修改，也就是把文件下所有文件，包括子目录一起修改，大多数情况下-R 属性都是这个意思。</p>
 <ol>
-<li>修改文件权限的命令是chmod，这个命令的格式是有两种设置方法有数字法与文字法i，数字法就是用数字来代替rwx，r、w、x分别对应4、2、1，这个命令的格式为<blockquote>
+<li>修改文件权限的命令是chmod，这个命令的格式是有两种设置方法有数字法与文字法i，数字法就是用数字来代替rwx，r、w、x分别对应4、2、1，这个命令的格式为</li>
+</ol>
+<blockquote>
 <p>chmod  [-R]  xyz  filename</p>
 </blockquote>
-</li>
-</ol>
 <p>其中x代表owner权限，y代表group权限，z代表others权限，以上三种身份的值就是rwx的和，r代表读，w写 ，x运行，如果没有相应的权限则值为0。<br>如想设置.bashrc文件的权限为owner为rwx，group权限为无，others权限为无，则命令如下</p>
 <blockquote>
 <p>chmod 700 .bashrc</p>
