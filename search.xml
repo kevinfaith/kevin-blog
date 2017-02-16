@@ -4,8 +4,35 @@
   
     
     <entry>
-      <title><![CDATA[一天一条linux命令]]></title>
-      <url>http://www.kevinfaith.cn/undefined/%E4%B8%80%E5%A4%A9%E4%B8%80%E6%9D%A1linux%E5%91%BD%E4%BB%A420170215/</url>
+      <title><![CDATA[一天一条linux命令(2)]]></title>
+      <url>http://www.kevinfaith.cn/undefined/%E4%B8%80%E5%A4%A9%E4%B8%80%E6%9D%A1linux%E5%91%BD%E4%BB%A4(2)20170216/</url>
+      <content type="html"><![CDATA[<p>linux下实行计划任务的方法<br><a id="more"></a></p>
+<ol>
+<li>执行一次性任务可以用at命令，比如你要设置一个明天上午10点输出hello world：<blockquote>
+<p>at 10.00 tomorrow<br>at &gt;etho“hello world”</p>
+</blockquote>
+</li>
+</ol>
+<p>ctrl+D结束输入</p>
+<blockquote>
+<p>job 1 at 2017-2-16 10:00</p>
+</blockquote>
+<p>这样就ok了</p>
+<p>2.如果要设置周期性任务，可以用crontab命令来完成，“crontab -e”编辑cron表，“crontab -l”查看当前cron表，“crontab -r“删除当前cron表，”crontab -u 用户名”以某用户的身份控制cron表。</p>
+<p>crontab -e 编辑cron表，这时会打开vi，按“i”进入编辑模式，<br>依此输入 “分钟  小时 日 月 周 [用户名]  命令”<br>如：我想在2017.2.16，4点输出i love you</p>
+<blockquote>
+<p>*  4  16  2  *  etho“i love you”</p>
+</blockquote>
+<p>cron时间符号</p>
+<blockquote>
+<p>*  代表任意时间<br>，代表分隔出不连续点，如2.5.7<br>-  代表连续点。如2-4， 表示2.3.4<br>  */  表示每隔单位时间</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[一天一条linux命令（1）]]></title>
+      <url>http://www.kevinfaith.cn/undefined/%E4%B8%80%E5%A4%A9%E4%B8%80%E6%9D%A1linux%E5%91%BD%E4%BB%A4(1)20170215/</url>
       <content type="html"><![CDATA[<p>linux下修改文件所属用户组和修改文件权限的命令</p>
 <a id="more"></a>
 <ol>

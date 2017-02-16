@@ -72,6 +72,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
+  <meta name="keywords" content="linux," />
 
 
 
@@ -84,15 +85,17 @@
 
 
 
-<meta name="description" content="this is blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="kevin blog">
-<meta property="og:url" content="http://www.kevinfaith.cn/index.html">
+
+<meta name="description" content="linux下实行计划任务的方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一天一条linux命令(2)">
+<meta property="og:url" content="http://www.kevinfaith.cn/undefined/一天一条linux命令(2)20170216/index.html">
 <meta property="og:site_name" content="kevin blog">
-<meta property="og:description" content="this is blog">
+<meta property="og:description" content="linux下实行计划任务的方法">
+<meta property="og:updated_time" content="2017-02-16T14:41:47.522Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="kevin blog">
-<meta name="twitter:description" content="this is blog">
+<meta name="twitter:title" content="一天一条linux命令(2)">
+<meta name="twitter:description" content="linux下实行计划任务的方法">
 
 
 
@@ -110,7 +113,7 @@
   };
 </script>
 
-  <title> kevin blog </title>
+  <title> 一天一条linux命令(2) | kevin blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -131,9 +134,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -263,9 +264,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -285,10 +286,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/undefined/一天一条linux命令(2)20170216/" itemprop="url">
-                  一天一条linux命令(2)
-                </a>
+                一天一条linux命令(2)
               
             
           </h1>
@@ -356,290 +354,106 @@
       
 
       
-        
-          <p>linux下实行计划任务的方法<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/undefined/一天一条linux命令(2)20170216/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+        <p>linux下实行计划任务的方法<br><a id="more"></a></p>
+<ol>
+<li>执行一次性任务可以用at命令，比如你要设置一个明天上午10点输出hello world：<blockquote>
+<p>at 10.00 tomorrow<br>at &gt;etho“hello world”</p>
+</blockquote>
+</li>
+</ol>
+<p>ctrl+D结束输入</p>
+<blockquote>
+<p>job 1 at 2017-2-16 10:00</p>
+</blockquote>
+<p>这样就ok了</p>
+<p>2.如果要设置周期性任务，可以用crontab命令来完成，“crontab -e”编辑cron表，“crontab -l”查看当前cron表，“crontab -r“删除当前cron表，”crontab -u 用户名”以某用户的身份控制cron表。</p>
+<p>crontab -e 编辑cron表，这时会打开vi，按“i”进入编辑模式，<br>依此输入 “分钟  小时 日 月 周 [用户名]  命令”<br>如：我想在2017.2.16，4点输出i love you</p>
+<blockquote>
+<p>*  4  16  2  *  etho“i love you”</p>
+</blockquote>
+<p>cron时间符号</p>
+<blockquote>
+<p>*  代表任意时间<br>，代表分隔出不连续点，如2.5.7<br>-  代表连续点。如2-4， 表示2.3.4<br>  */  表示每隔单位时间</p>
+</blockquote>
+
       
     </div>
 
     <div>
       
+        
+<div id="wechat_subscriber" style="display: block； padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.png" alt="kevin wechat" style="width: 200px; max-width: 100%;"/>
+    <div>我在公众号与你分享更多内容</div>
+</div>
+
+      
     </div>
 
     <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/mm_facetoface_collect_qrcode_1486354437347.png" alt="kevin WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/uploads/1486353282775.jpg" alt="kevin Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/undefined/一天一条linux命令(1)20170215/" itemprop="url">
-                  一天一条linux命令（1）
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-15T00:00:00+08:00" content="2017-02-15">
-              2017-02-15
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/linux命令/" itemprop="url" rel="index">
-                    <span itemprop="name">linux命令</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-             <span id="/undefined/一天一条linux命令(1)20170215/" class="leancloud_visitors" data-flag-title="一天一条linux命令（1）">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
+            <a href="/tags/linux/" rel="tag">#linux</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>linux下修改文件所属用户组和修改文件权限的命令</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/undefined/一天一条linux命令(1)20170215/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/undefined/一天一条linux命令(1)20170215/" rel="next" title="一天一条linux命令（1）">
+                <i class="fa fa-chevron-left"></i> 一天一条linux命令（1）
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/undefined/hello-world20170206/" itemprop="url">
-                  基于Hexo和coding搭建博客
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-06T00:00:00+08:00" content="2017-02-06">
-              2017-02-06
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/搭建博客/" itemprop="url" rel="index">
-                    <span itemprop="name">搭建博客</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-             <span id="/undefined/hello-world20170206/" class="leancloud_visitors" data-flag-title="基于Hexo和coding搭建博客">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>在windows下（linux下步骤也差不多）用coding和hexo搭建自己的博客<br>需要的工具：node，git ，以及在coding下建立一个项目<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/undefined/hello-world20170206/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -647,6 +461,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -666,8 +484,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/timg.jpg"
@@ -735,6 +562,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -845,6 +683,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
