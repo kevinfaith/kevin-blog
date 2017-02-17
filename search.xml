@@ -4,6 +4,36 @@
   
     
     <entry>
+      <title><![CDATA[acm编程题]]></title>
+      <url>http://www.kevinfaith.cn/undefined/acm%E7%BC%96%E7%A8%8B%E9%A2%9820170217/</url>
+      <content type="html"><![CDATA[<p>C语言实验题――两个数比较<br>描述</p>
+<blockquote>
+<p>求2个数中较大者。</p>
+</blockquote>
+<p>输入</p>
+<blockquote>
+<p>第一行为测试的数据组数N，接下来的N行分别是两个待比较的整数</p>
+</blockquote>
+<p>输出</p>
+<blockquote>
+<p>输出N行，每一行的值为每组数中较大的整数</p>
+</blockquote>
+<p>样例输入</p>
+<blockquote>
+<p>2<br>1   2<br>15  10</p>
+</blockquote>
+<p>样例输出</p>
+<blockquote>
+<p>2<br>15</p>
+</blockquote>
+<a id="more"></a>
+<blockquote>
+<p>#include <stdio.h><br>int a,b;<br>int main(int argc, char const *argv[])<br>{<br>    scanf(“%d,%d”,&amp;a,&amp;b);<br>    if (a&gt;b)<br>    {<br>        printf(“%d\n”, a);<br>    }<br>    else<br>    {<br>        printf(“%d\n”, b );<br>    }<br>    return 0;<br>}</stdio.h></p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[一天一条linux命令(2)]]></title>
       <url>http://www.kevinfaith.cn/undefined/%E4%B8%80%E5%A4%A9%E4%B8%80%E6%9D%A1linux%E5%91%BD%E4%BB%A4(2)20170216/</url>
       <content type="html"><![CDATA[<p>linux下实行计划任务的方法<br><a id="more"></a></p>
