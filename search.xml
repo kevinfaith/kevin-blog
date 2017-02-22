@@ -29,6 +29,7 @@
 <a id="more"></a>
 <blockquote>
 <p>#include <stdio.h><br>int a,b;<br>int main(int argc, char const *argv[])<br>{<br>    scanf(“%d,%d”,&amp;a,&amp;b);<br>    if (a&gt;b)<br>    {<br>        printf(“%d\n”, a);<br>    }<br>    else<br>    {<br>        printf(“%d\n”, b );<br>    }<br>    return 0;<br>}</stdio.h></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33875750&auto=1&height=66"></iframe>
 </blockquote>
 ]]></content>
     </entry>
