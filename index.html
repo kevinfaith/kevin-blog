@@ -76,6 +76,8 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="kevin blog" type="application/atom+xml" />
+
 
 
 
@@ -87,7 +89,7 @@
 <meta name="description" content="The biggest security vulnerabilities do not exist in any program or server, humans are the biggest security vulnerabilities">
 <meta property="og:type" content="website">
 <meta property="og:title" content="kevin blog">
-<meta property="og:url" content="http://www.kevinfaith.cn/index.html">
+<meta property="og:url" content="https://git.coding.net/kevinfaith/hexo-blog.git/index.html">
 <meta property="og:site_name" content="kevin blog">
 <meta property="og:description" content="The biggest security vulnerabilities do not exist in any program or server, humans are the biggest security vulnerabilities">
 <meta name="twitter:card" content="summary">
@@ -430,7 +432,7 @@
               
                 
                 <a class="post-title-link" href="/undefined/一天一条linux命令(2)20170216/" itemprop="url">
-                  linux命令(2)
+                  linux下实现计划任务的方法
                 </a>
               
             
@@ -477,7 +479,7 @@
 
           
           
-             <span id="/undefined/一天一条linux命令(2)20170216/" class="leancloud_visitors" data-flag-title="linux命令(2)">
+             <span id="/undefined/一天一条linux命令(2)20170216/" class="leancloud_visitors" data-flag-title="linux下实现计划任务的方法">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -500,7 +502,13 @@
 
       
         
-          <p>linux下实行计划任务的方法<br>
+          <p>linux下实行计划任务的方法</p>
+<ol>
+<li>执行一次性任务可以用at命令，比如你要设置一个明天上午10点输出hello world：<blockquote>
+<p>at 10.00 tomorrow<br>at &gt;etho“hello world”</p>
+</blockquote>
+</li>
+</ol>
           <div class="post-more-link text-center">
             <a class="btn" href="/undefined/一天一条linux命令(2)20170216/#more" rel="contents">
               阅读全文 &raquo;
@@ -554,7 +562,7 @@
               
                 
                 <a class="post-title-link" href="/undefined/一天一条linux命令(1)20170215/" itemprop="url">
-                  linux命令（1）
+                  linux下修改文件所属用户组和文件权限的方法
                 </a>
               
             
@@ -601,7 +609,7 @@
 
           
           
-             <span id="/undefined/一天一条linux命令(1)20170215/" class="leancloud_visitors" data-flag-title="linux命令（1）">
+             <span id="/undefined/一天一条linux命令(1)20170215/" class="leancloud_visitors" data-flag-title="linux下修改文件所属用户组和文件权限的方法">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -624,7 +632,13 @@
 
       
         
-          <p>linux下修改文件所属用户组和修改文件权限的命令</p>
+          <p>linux下修改文件所属用户组和修改文件权限的方法</p>
+<ol>
+<li>修改文件所属用户组的命令是chown，这个命令的格式是</li>
+</ol>
+<blockquote>
+<p>chown    [-R]    username  filename<br>chown    [-R]    username:group filename</p>
+</blockquote>
           <div class="post-more-link text-center">
             <a class="btn" href="/undefined/一天一条linux命令(1)20170215/#more" rel="contents">
               阅读全文 &raquo;
@@ -846,6 +860,13 @@
 
         </nav>
 
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
         
 
         <div class="links-of-author motion-element">

@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[acm编程题]]></title>
-      <url>http://www.kevinfaith.cn/undefined/acm%E7%BC%96%E7%A8%8B%E9%A2%9820170217/</url>
+      <url>https://git.coding.net/kevinfaith/hexo-blog.git/undefined/acm%E7%BC%96%E7%A8%8B%E9%A2%9820170217/</url>
       <content type="html"><![CDATA[<p>C语言实验题――两个数比较<br>描述</p>
 <blockquote>
 <p>求2个数中较大者。</p>
@@ -35,15 +35,16 @@
     </entry>
     
     <entry>
-      <title><![CDATA[linux命令(2)]]></title>
-      <url>http://www.kevinfaith.cn/undefined/%E4%B8%80%E5%A4%A9%E4%B8%80%E6%9D%A1linux%E5%91%BD%E4%BB%A4(2)20170216/</url>
-      <content type="html"><![CDATA[<p>linux下实行计划任务的方法<br><a id="more"></a></p>
+      <title><![CDATA[linux下实现计划任务的方法]]></title>
+      <url>https://git.coding.net/kevinfaith/hexo-blog.git/undefined/%E4%B8%80%E5%A4%A9%E4%B8%80%E6%9D%A1linux%E5%91%BD%E4%BB%A4(2)20170216/</url>
+      <content type="html"><![CDATA[<p>linux下实行计划任务的方法</p>
 <ol>
 <li>执行一次性任务可以用at命令，比如你要设置一个明天上午10点输出hello world：<blockquote>
 <p>at 10.00 tomorrow<br>at &gt;etho“hello world”</p>
 </blockquote>
 </li>
 </ol>
+<a id="more"></a>
 <p>ctrl+D结束输入</p>
 <blockquote>
 <p>job 1 at 2017-2-16 10:00</p>
@@ -64,16 +65,16 @@
     </entry>
     
     <entry>
-      <title><![CDATA[linux命令（1）]]></title>
-      <url>http://www.kevinfaith.cn/undefined/%E4%B8%80%E5%A4%A9%E4%B8%80%E6%9D%A1linux%E5%91%BD%E4%BB%A4(1)20170215/</url>
-      <content type="html"><![CDATA[<p>linux下修改文件所属用户组和修改文件权限的命令</p>
-<a id="more"></a>
+      <title><![CDATA[linux下修改文件所属用户组和文件权限的方法]]></title>
+      <url>https://git.coding.net/kevinfaith/hexo-blog.git/undefined/%E4%B8%80%E5%A4%A9%E4%B8%80%E6%9D%A1linux%E5%91%BD%E4%BB%A4(1)20170215/</url>
+      <content type="html"><![CDATA[<p>linux下修改文件所属用户组和修改文件权限的方法</p>
 <ol>
 <li>修改文件所属用户组的命令是chown，这个命令的格式是</li>
 </ol>
 <blockquote>
 <p>chown    [-R]    username  filename<br>chown    [-R]    username:group filename</p>
 </blockquote>
+<a id="more"></a>
 <p>第一个是修改文件所属的的用户，第二个修改文件所属用户组,-R属性为可选属性，意思是递归修改，也就是把文件下所有文件，包括子目录一起修改，大多数情况下-R 属性都是这个意思。</p>
 <p>2.修改文件权限的命令是chmod，这个命令的格式是有两种设置方法有数字法与文字法i，数字法</p>
 <p>就是用数字来代替rwx，r、w、x分别对应4、2、1，这个命令的格式为</p>
@@ -94,7 +95,7 @@
     
     <entry>
       <title><![CDATA[基于Hexo和coding搭建博客]]></title>
-      <url>http://www.kevinfaith.cn/undefined/hello-world20170206/</url>
+      <url>https://git.coding.net/kevinfaith/hexo-blog.git/undefined/hello-world20170206/</url>
       <content type="html"><![CDATA[<p>在windows下（linux下步骤也差不多）用coding和hexo搭建自己的博客<br>需要的工具：node，git ，以及在coding下建立一个项目<br><a id="more"></a></p>
 <ol>
 <li><p>首先去git<a href="https://git-scm.com/downloads/" target="_blank" rel="external">官网</a>下载git，而linux的git安装则比较方便，在终端输入：</p>
