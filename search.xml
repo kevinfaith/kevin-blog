@@ -58,6 +58,8 @@
 <blockquote>
 <p>*  代表任意时间<br>，代表分隔出不连续点，如2.5.7<br>-  代表连续点。如2-4， 表示2.3.4<br>  */  表示每隔单位时间</p>
 </blockquote>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33875750&auto=1&height=66"></iframe>
+
 ]]></content>
     </entry>
     
@@ -82,6 +84,11 @@
 <blockquote>
 <p>chmod 700 .bashrc</p>
 </blockquote>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33875750&auto=1&height=66"></iframe>
+
+
+
+
 ]]></content>
     </entry>
     
@@ -137,6 +144,9 @@
 <p>hexo d //上传</p>
 </blockquote>
 <p>等待片刻你的静态网页便上传成功，</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33875750&auto=1&height=66"></iframe>
+
+
 ]]></content>
     </entry>
     
