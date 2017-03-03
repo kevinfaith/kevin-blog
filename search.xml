@@ -4,7 +4,60 @@
   
     
     <entry>
-      <title><![CDATA[acm编程题]]></title>
+      <title><![CDATA[acm C语言鸡兔同笼问题]]></title>
+      <url>https://git.coding.net/kevinfaith/hexo-blog.git/undefined/acm%E7%BC%96%E7%A8%8B%E9%A2%98%20(2)20170303/</url>
+      <content type="html"><![CDATA[<p>描述</p>
+<blockquote>
+<p>浙江工商大学校园里绿树成荫，环境非常舒适，因此也引来一批动物朋友来此居住。<br>童心未泯的redraiment就经常带些碎面包什么的去广场喂鸽子和兔子，并和它们玩耍。一点也不像大学生，还是一副老不正经的样子，呵呵。<br>随着鸽子和兔子数目的增多，redraiment带的那点食物已经不够它们瓜分了。为了能让自己的好朋友吃的饱饱的，redraiment决定统计一下有多少只鸽子和有多少只兔子，以便带来足够的食物。一、二、三、四、五…他开始数了。<br>现在，他已经知道有这些鸽子和兔子一共有n个头和m只脚。请你帮他写个程序计算一下一共有多少只鸽子和兔子。</p>
+</blockquote>
+<a id="more"></a>
+<p>输入</p>
+<blockquote>
+<p>输入包括多组数据。<br>每行包括2个数据：n、m(代表上面题目中提到的意思1≤n, m≤230)。<br>n、m都是整数。 </p>
+</blockquote>
+<p>输出</p>
+<blockquote>
+<p>每组数据的输出都只有一行，分别是鸽子的数量和兔子数量。<br>如果输入的测试数据不能求得结果，那肯定是redraiment这个马大哈数错了，就输出”Error”提示他。</p>
+</blockquote>
+<p>样例输入</p>
+<blockquote>
+<p>94 35<br>13</p>
+</blockquote>
+<p>样例输出</p>
+<blockquote>
+<p>12 23<br>error</p>
+</blockquote>
+<p>上代码</p>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int m,n,x,y; 
+    scanf(&quot;%d,%d&quot;,&amp;m,&amp;n);
+    if (n&gt;=1,m&lt;=2^30 )
+    {
+        if ( m % 2 == 0 )
+        {
+            x=2*n-m/2;
+            y=m/2-n;
+            printf(&quot;%d,%d\n&quot;,x,y);
+        }
+        else
+        {
+            printf(&quot;error\n&quot;);
+        }
+    }
+    else
+    {
+        printf(&quot;error\n&quot;);
+    }
+    return 0;
+}
+</code></pre><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=5276807&auto=1&height=66"></iframe>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[acm C语言求两个数最大值]]></title>
       <url>https://git.coding.net/kevinfaith/hexo-blog.git/undefined/acm%E7%BC%96%E7%A8%8B%E9%A2%9820170217/</url>
       <content type="html"><![CDATA[<p>C语言实验题――两个数比较<br>描述</p>
 <blockquote>
